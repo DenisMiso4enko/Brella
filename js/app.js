@@ -1,3 +1,45 @@
+// Слайдер 
+/* $('.slider').slick() */
+
+$('.slider').slick({
+    /* dots: true, */
+    /* infinite: false,
+    speed: 300, */
+    slidesToShow: 5,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1088,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ] 
+  });
+
 // DropDown
 const dropdownBtn = document.querySelector('.dropdown-btn')
 const dropdownList = document.querySelector('.dropdown-list')
@@ -25,7 +67,7 @@ const burger = document.querySelector('.burger')
 const menu = document.querySelector('.nav-menu__list')
 
 const demo = document.querySelector('.btn-header')
-console.log(demo);
+//console.log(demo);
 
 burger.addEventListener('click', () => {
     burger.classList.toggle('active')
@@ -36,3 +78,5 @@ if (innerWidth < 430) {
     demo.textContent = 'Demo'
 }
 
+
+   

@@ -189,6 +189,9 @@ a {
     .nav-menu__list {
         top: 9%;
     }
+    .btn-header {
+        display: none;
+    }
 }
 
 @media (max-width: 430px) {
@@ -756,6 +759,104 @@ span {
     border-bottom: 2px solid #214E41;
 }
 
+
+/* ==================  Section Proudly ================== */
+
+.section-proudly {
+    margin-top: 120px;
+    border-bottom: 2px solid #D9D9D9;
+
+}
+.section-proudly__inner {
+}
+.title {
+}
+.proundly-title {
+    text-align: center;
+    margin-bottom: 110px;
+}
+.slider {
+    display: flex;
+    margin-bottom: 121px;
+    
+}
+.slider__item {
+    
+   
+}
+.slider__item-img {
+}
+.slick-track {
+    display: flex;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slider {
+    position: relative;
+    padding: 0 60px;
+}
+.slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 23px;
+    transform: translateY(-50%);
+}
+/* Стрелка влево */
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url(../img/arrow\ left.svg) 0 0/100% no-repeat;
+}
+/* Стрелка вправо */
+.slider .slick-arrow.slick-next{
+    right: 0;
+    background: url(../img/arrow\ right.svg) 0 0/100% no-repeat;
+
+}
+
+
+/* ==================  Section Cards ================== */
+
+.section-cards {
+    margin: 120px 0 120px;
+}
+.section-cards__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    max-width: 355px;
+}
+.card img {
+    width: 100%;
+   
+    margin-bottom: 20px;
+}
+.subtitle {
+}
+.title-card {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #214E41;
+}
+@media (max-width: 1088px) {
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .card {
+        margin: 0 auto;
+    }
+}
+
 /* ==================  Section Let's Talk ================== */
 
 .section-talk {
@@ -821,4 +922,11 @@ span {
         padding-left: 0;
         margin-bottom: 60px;
     }
+}
+
+/* ==================  Footer ================== */
+
+.footer {
+    height: 500px;
+    background-color: #214E41;
 }
