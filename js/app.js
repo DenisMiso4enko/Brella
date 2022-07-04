@@ -64,7 +64,9 @@ document.addEventListener('click', function(e) {
 
 // Burger
 const burger = document.querySelector('.burger')
-const menu = document.querySelector('.nav-menu__list')
+const menu = document.querySelector('.mobile-menu')
+const body = document.body 
+console.log(body);
 
 const demo = document.querySelector('.btn-header')
 //console.log(demo);
